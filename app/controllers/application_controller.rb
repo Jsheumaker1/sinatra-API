@@ -14,8 +14,10 @@ class ApplicationController < Sinatra::Base
     200
   end
 
-  # method "URL" do
-    
-  # end
+  get '/posts' do
+    {posts: Post.all}.to_json
+  end
+
+
 
 end
